@@ -407,7 +407,14 @@ add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 function church_admin_main() 
 {
     global $wpdb,$church_admin_version;
-    switch($_GET['action'])
+    
+    $action = NULL;
+
+    if (isset($_GET['action'])) {
+        $action = $_GET['action'];
+    }
+
+    switch($action)
     {
         case 'church_admin_send_sms':if(church_admin_level_check('Bulk SMS')){require(CHURCH_ADMIN_INCLUDE_PATH.'sms.php');church_admin_send_sms();}break;
         
