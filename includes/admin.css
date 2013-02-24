@@ -1,0 +1,30 @@
+.church_admin_main_menu h2{padding-top:0px;}
+.church_admin_main_menu{width:40%;float:left;border:1px solid #CCC;border-radius:5px;margin:0px 10px 10px 0px;padding:5px 10px;}
+
+ #smallgroup{display:none;}
+ #individuals{display:none;}
+ #roles{display:none;}
+.church_admin .red{border:1px solid #f00!important;}
+.church_admin .roles{display:inline-block;}
+.church_admin form li {width:700px;}
+.church_admin label{width:200px; float:left;font-weight:bold;}
+.church_admin input[type="text"]{width:300px;}
+.note{display:inline-block;height: 100%;}
+#church_admin_phone
+    {
+        background:url("../images/mobilephone.png") no-repeat;
+        width:156px;
+        height:295px;
+        font-size:10pt;
+    }
+    
+#church_admin_whoto {position:relative; top:55px;left:10px;width:130px;}
+.church_admin_regular{background:#E6E6E6;}
+#church_admin_message{position:relative;top:60px;left:10px; }
+.sms {width:135px; height:100px;background:transparent;border:1px solid orange;}
+#church_admin_number {position:relative;top:35px;left:10px;}
+#church_admin_number input{width:135px;background:transparent;border:1px solid orange;}
+#church_admin_submit{position:relative;top:95px;left:20px;}  
+
+
+.clonedInput {border:1px solid #CCC;border-radius:5px;margin-bottom:10px;padding:10px 5px ;}
