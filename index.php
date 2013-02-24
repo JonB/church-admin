@@ -75,7 +75,7 @@ if(!empty($oldroles))
     delete_option('church_admin_roles');
 }
 
-church_admin_constants();
+add_action('init','church_admin_constants');
 function church_admin_constants()
 {
         /**
