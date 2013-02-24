@@ -135,7 +135,7 @@ function ca_rota_order()
  * 
  */ 
     global $wpdb;
-    //rota_order
+    $rota_order = NULL;
     $results=$wpdb->get_results('SELECT * FROM '.CA_RST_TBL.' ORDER BY rota_order ASC');
     if($results)
     {
