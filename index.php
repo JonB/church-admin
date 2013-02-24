@@ -131,7 +131,7 @@ function ca_rota_order()
  * @author  Andy Moyle
  * @param    null
  * @return   Array, key is order
- * @version  0.1
+ * @version  0.11
  * 
  */ 
     global $wpdb;
