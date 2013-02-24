@@ -131,11 +131,11 @@ function ca_rota_order()
  * @author  Andy Moyle
  * @param    null
  * @return   Array, key is order
- * @version  0.1
+ * @version  0.11
  * 
  */ 
     global $wpdb;
-    //rota_order
+    $rota_order = NULL;
     $results=$wpdb->get_results('SELECT * FROM '.CA_RST_TBL.' ORDER BY rota_order ASC');
     if($results)
     {
@@ -407,7 +407,14 @@ add_action( 'wp_before_admin_bar_render', 'mytheme_admin_bar_render' );
 function church_admin_main() 
 {
     global $wpdb,$church_admin_version;
-    switch($_GET['action'])
+    
+    $action = NULL;
+
+    if (isset($_GET['action'])) {
+        $action = $_GET['action'];
+    }
+
+    switch($action)
     {
         case 'church_admin_send_sms':if(church_admin_level_check('Bulk SMS')){require(CHURCH_ADMIN_INCLUDE_PATH.'sms.php');church_admin_send_sms();}break;
         
